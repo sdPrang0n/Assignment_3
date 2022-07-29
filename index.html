@@ -27,13 +27,19 @@
         <!-- Header Navbar ha -->
         <nav class="navbar navbar-expand-lg bg-light container">
             <div class="container">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navCollapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <a class="navbar-brand fw-bold" href="#">Coursera</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                
                 <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav ">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
@@ -54,11 +60,14 @@
                         </li>
 
                     </ul>
+                
                     <span class="navbar-text">
                         <button class="btn btn-outline-primary me-2 fw-bold" type="button">Register</button>
                     </span>
                 </div>
             </div>
+                
+        
         </nav>
         <!-- end haha -->
 
@@ -129,8 +138,8 @@
         <!-- cards section -->
 
         <div class="container text-center">
-            <div class="row row-cols-2">
-                <div class="col ">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
                     <!-- card1 -->
                     <div class="card d-flex flex-row mb-3 text-lg-start" >
                         <div>
@@ -146,7 +155,7 @@
                     </div>
                     <!-- end card1 -->
                 </div>
-                <div class="col">
+                <div class="col-md-6 col-lg-4">
                     <!-- card2 -->
                     <div class="card d-flex flex-row mb-3 text-lg-start">
                         <div>
@@ -162,7 +171,7 @@
                     </div>
                     <!-- end card2 -->
                 </div>
-                <div class="col">
+                <div class="col-md-6 col-lg-4">
                     <!-- card3 -->
                     <div class="card d-flex flex-row mb-3 text-lg-start" >
                         <div>
@@ -178,7 +187,7 @@
                     </div>
                     <!-- end card3 -->
                 </div>
-                <div class="col">
+                <div class="col-md-6 col-lg-4">
                     <!-- card4 -->
                     <div class="card d-flex flex-row mb-3 text-lg-start">
                         <div>
@@ -194,7 +203,7 @@
                     </div>
                     <!-- end card4 -->
                 </div>
-                <div class="col">
+                <div class="col-md-6 col-lg-4">
                     <!-- card5 -->
                     <div class="card d-flex flex-row mb-3 text-lg-start">
                         <div>
@@ -210,7 +219,7 @@
                     </div>
                     <!-- end card5 -->
                 </div>
-                <div class="col">
+                <div class="col-md-6 col-lg-4">
                     <!-- card6 -->
                     <div class="card d-flex flex-row mb-3 text-lg-start">
                         <div>
@@ -241,17 +250,16 @@
 
         <div class="card d-flex flex-row text-lg-start container ">
 
-            <div class=" text-center">
-                <div class="row">
+            <div class="container text-center">
+                <div class="row row-cols-2">
                   <div class="col">
-                    <div>
-                        <img class="card-img-top img-fluid w-100" src="images/Rectangle 8.png"
+                    <img class="card-img-top img-fluid" src="images/Rectangle 8.png"
                             alt="Card image cap">
-                    </div>
                   </div>
                   <div class="col">
-                    <div class="card-body">
-                        <h1 class="card-title text-start">Explore The elearning Institute</h1>
+                    <div class="card-body ">
+                        <div class="">
+                            <h1 class="card-title text-start">Explore The elearning Institute</h1>
                         <p class="card-text text-start">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure.
                             <br>
                             Anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined.</p>
@@ -281,20 +289,25 @@
                                 </div>
                               </div>
         
-                        <a href="#" class="btn btn-info text-center text-white fs-6 fw-semibold mt-3">Read More</a>
+                        <a href="#" class="btn btn-info text-center text-white fs-6 fw-semibold mt-3" >Read More</a>
+                        </div>
                         
                     </div>
                   </div>
+                  
                 </div>
               </div>
 
+
+
+            
             
             
         </div>
         <!-- end -->
 
         <!-- Register now card00 -->
-        <div class="card d-flex flex-row my-3 text-lg-start bg-info container justify-content-between p-5 my-5">
+        <div class="card col-xs-12 d-flex flex-row my-3 text-lg-start bg-info container justify-content-between p-5 my-5">
             
             <div class="card-body text-white">
                 <h1 class="card-title">Ready to join?</h1>
@@ -302,7 +315,28 @@
                 
             </div>
             <div>
-                <a href="#" class="btn btn-light text-center text-info fs-6 fw-semibold mt-lg-5 align-content-center ">Read More</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#registerpop" class="btn btn-light text-center text-info fs-6 fw-semibold mt-lg-5 align-content-center ">Read More</a>
+
+                <!-- modal pop -->
+                <div class="modal" tabindex="-1" id="registerpop">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Register Now</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Don't created any account?</p>
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sign Up</button>
+                        </div>
+                        <div class="modal-footer">
+                          
+                          <button type="button" class="btn btn-primary">Log in</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- end modal -->
             </div>
         </div>
 
@@ -356,7 +390,7 @@
                 </div>
               </div>
               <div class="d-flex justify-content-center">
-              <a href="#" class="btn btn-primary text-center text-white fs-6 fw-semibold mt-lg-5 ">Read More</a>
+              <a href="#" class="btn btn-primary text-center text-white fs-6 fw-semibold mt-lg-5 ">View All</a>
               </div>
 
             <!-- student feedback section -->
